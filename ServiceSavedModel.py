@@ -20,7 +20,7 @@ def saveModel(simulationData, colours, path="sample.json", modelParams=None, sav
         Nothing. Creates or overwrites a file.
     """
     time, positions, orientations = simulationData
-    dict = {"time": __getSpecifiedIntervals(saveInterval, time.tolist()), 
+    dict = {"time": __getSpecifiedIntervals(saveInterval, time), 
             "positions": __getSpecifiedIntervals(saveInterval, positions.tolist()), 
             "orientations": __getSpecifiedIntervals(saveInterval, orientations.tolist()), 
             "colours": __getSpecifiedIntervals(saveInterval, colours)}
