@@ -142,7 +142,7 @@ for expId in range(1311, np.max(df['exp_id'])):
 
     simulationData = (times, np.array(positions), np.array(orientations))
 
-    filename = f"leivids/lei_2020_expId={expId}"
+    filename = f"lei_2020_extracted_data/lei_2020_expId={expId}"
 
     ServiceSavedModel.saveModel(simulationData=simulationData, colours=colours, path=f"{filename}.json")
 
