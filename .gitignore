@@ -1,0 +1,9 @@
+.git
+/__pycache__
+__pycache__
+*.pyc
+*.swp
+.DS_Store
+*.mp4
+*.png
+*.svg
