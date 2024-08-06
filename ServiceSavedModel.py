@@ -44,15 +44,14 @@ def loadModel(path, loadSwitchValues=False):
     """
     loadedJson = __loadJson(path)
 
-    modelParams = loadedJson["modelParams"]
     time = np.array(loadedJson["time"])
     positions = np.array(loadedJson["positions"])
     orientations = np.array(loadedJson["orientations"])
     colours = np.array(loadedJson["colours"])
     if loadSwitchValues == True:
         switchValues = np.array(loadedJson["switchValues"])
-        return modelParams, (time, positions, orientations), colours, switchValues
-    return modelParams, (time, positions, orientations), colours
+        return time, positions, orientations, colours, switchValues
+    return time, positions, orientations, colours
 
 def loadModels(paths, loadSwitchValues=False):
     """
