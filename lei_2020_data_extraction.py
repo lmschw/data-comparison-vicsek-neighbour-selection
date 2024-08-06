@@ -73,7 +73,7 @@ def getTimesPositionsOrientationsColoursFromDf(df):
         coloursT = []
 
         dfT = df.loc[(df['time'] == t), ['exp_id','fish_id', 'time', 'x', 'y', 'u', 'v']]
-        for i in range(1, n):
+        for i in range(1, n+1):
             coloursT.append("k")
 
             dfI = dfT.loc[(df['fish_id'] == i), ['exp_id','fish_id', 'time', 'x', 'y', 'u', 'v']]
