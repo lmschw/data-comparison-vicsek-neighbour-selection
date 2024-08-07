@@ -154,7 +154,7 @@ for expId in df['exp_id'].unique():
     dfExp['u_translated'] = dfOrientTranslated['u']
     dfExp['v_translated'] = dfOrientTranslated['v']
 
-    print(dfExp['u'] == dfExp['u_translated'])
+    #print(dfExp['u'] == dfExp['u_translated'])
 
     #print(dfExp.head())
     df[df['exp_id'] == expId] = dfExp
