@@ -160,7 +160,7 @@ for expId in df['exp_id'].unique():
     df[df['exp_id'] == expId] = dfExp
     #print(df.head())
 
-    df.to_csv(f"{filename}.csv", index=False)
+    dfExp.to_csv(f"{filename}.csv", index=False)
 
     tmax = np.max(dfExp['timestep'])
 
@@ -184,3 +184,5 @@ for expId in df['exp_id'].unique():
 
     # Display Animation
     #preparedAnimator.showAnimation()
+
+df.to_csv("lei_2020_all_experiments.csv", index=False)
